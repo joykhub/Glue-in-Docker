@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: joykhubglueindocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: joykhubglueindocker
+  template:
+    metadata:
+      labels:
+        app: joykhubglueindocker 
+    spec:
+      containers:
+        - name: joykhubglueindocker 
+          image: glueappregistry.azurecr.io/joykhubglueindocker
+          ports:
+          - containerPort: 80/tcp
