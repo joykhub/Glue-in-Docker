@@ -16,4 +16,4 @@ spec:
         - name: joykhubglueindocker 
           image: glueappregistry.azurecr.io/joykhubglueindocker
           ports:
-          - containerPort: 80/tcp
+          - containerPort: 80
